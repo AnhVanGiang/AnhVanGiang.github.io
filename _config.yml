@@ -126,7 +126,6 @@ kramdown:
     block:
       line_numbers: true
       start_line: 1
-    # math_engine: mathjax
 
 collections:
   tabs:
@@ -138,7 +137,7 @@ defaults:
       path: "" # An empty string here means all files in the project
       type: posts
     values:
-      layout: posts
+      layout: post
       comments: true # Enable comments in posts.
       toc: true # Display TOC column in posts.
       # DO NOT modify the following parameter unless you are confident enough
@@ -194,5 +193,3 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
-  
-math: true
