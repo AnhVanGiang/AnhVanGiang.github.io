@@ -49,7 +49,7 @@ In a more general setting, we want to find the parameters $\hat{\boldsymbol{\the
 $$
 \hat{\boldsymbol{\theta}} = \arg \max_{\boldsymbol{\theta}} P(\mathcal{D} \mid \boldsymbol{\theta})
 $$
-where $P(\mathcal{D} \mid \boldsymbol{\theta})$ is the likelihood, the probability of the data $\mathcal{D}$ given the parameters $\boldsymbol{\theta}$. Generally, we wants the parameters that best predicts the observed data, hence the name maximum likelihood estimation. 
+where $P(\mathcal{D} \mid \boldsymbol{\theta})$ is the likelihood, the probability of the data $\mathcal{D}$ given the parameters $\boldsymbol{\theta}$. **Generally, we wants the parameters that best predicts the observed data, hence the name maximum likelihood estimation**. 
 
 As an example. Let's say you have a bag of 100 marbles, some of which are red and some are blue. You draw 10 marbles from the bag without looking, and 7 of them are red. If you have two theories: Theory A suggests the bag has 70 red marbles and 30 blue marbles, while Theory B suggests it has 50 of each color, the "likelihood" of each theory can be calculated based on the observed data (7 out of 10 marbles drawn were red). In this case, Theory A has a higher likelihood because it better predicts the observed data.
 
@@ -66,4 +66,4 @@ Substituting this into the log likelihood function, we get
 $$
 \log \mathcal{L}(\boldsymbol{\beta}) = - \frac{n}{2} \log (2 \pi \sigma^2) - \frac{1}{2 \sigma^2} \sum_{i=1}^n (y_i - f(x_i))^2.
 $$
-Note that the residual sum of squares appears in the log likelihood so by maximizing the log likelihood by taking the derivative, you will obtain the same solution as the least squares method. Thus the least squares method is equivalent to the maximum likelihood estimation under the assumption that the errors are normally distributed.
+Note that the residual sum of squares appears in the log likelihood so by maximizing the log likelihood by taking the derivative, you will obtain the same solution as the least squares method. **Thus the least squares method is equivalent to the maximum likelihood estimation under the assumption that the errors are normally distributed**.
